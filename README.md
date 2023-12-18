@@ -8,3 +8,7 @@
 2. npm i @chakra-ui/react @emotion/react @emotion/styled framer-motion from https://chakra-ui.com/getting-started/vite-guide
 
 3. npm i react-icons react-router-dom
+    3.1 Usar rotas and pages
+
+4. Auth page
+    4.1 const [isLogin, setIsLogin] = useState(true)
