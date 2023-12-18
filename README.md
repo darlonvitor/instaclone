@@ -1,8 +1,10 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+1. npm create vite@latest and npm i
 
-Currently, two official plugins are available:
+    1.1 clean the  main files 
+    1.2 clean the app files
+    1.3 delete assets and public folders
+2. npm i @chakra-ui/react @emotion/react @emotion/styled framer-motion from https://chakra-ui.com/getting-started/vite-guide
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+3. npm i react-icons react-router-dom
