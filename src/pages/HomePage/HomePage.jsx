@@ -1,7 +1,8 @@
+import { Box, calc } from "@chakra-ui/react"
 
 const HomePage = () => {
   return (
-    <div>HomePage</div>
+    <Box height={"100vh"}>HomePage</Box>
   )
 }
 
