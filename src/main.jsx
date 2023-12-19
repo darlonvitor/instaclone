@@ -18,7 +18,7 @@ const styles = {
 
 // 2. Add your color mode config
 const config = {
-  initialColorMode: 'System',
+  initialColorMode: 'system',
   useSystemColorMode: true,
 };
 
