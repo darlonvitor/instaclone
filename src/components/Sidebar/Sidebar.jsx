@@ -113,12 +113,21 @@ const Sidebar = () => {
                         w={{ base: 10, md: "full" }}
                         mt={"auto"}
                     >
-                        <BiLogOut size={25}/>
+                        <BiLogOut size={25} />
                         <Box display={{ base: "none", md: "block" }} >
                             Sair
                         </Box>
                     </Link>
                 </Tooltip>
+                <Box color={colorMode == 'dark' ? "whiteAlpha.500" : "gray.400"} display={{ base: 'none', md: 'block' }}>
+                    &copy; Design by Darlon Vitor
+                </Box>
+                <Box
+                    color={colorMode == 'dark' ? "whiteAlpha.500" : "gray.400"}
+                    display={{ base: 'block', md: 'none' }}
+                >
+                    &copy; D.V.
+                </Box>
             </Flex>
         </Box>
     )
