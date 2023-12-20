@@ -21,7 +21,7 @@ export const ClientMobileLogo = (props) => (
 	<svg
 		aria-label='Instagram'
 		color={props.colorMode == 'light' ? "gray.800" : "whiteAlpha.900"}
-		fill={props.colorMode == 'light' ? "gray.800" : "whiteAlpha.900"}
+		fill={ props.colorMode == 'light' ? "#1A202C" : "rgba(245,245,245,0.92)"}
 		height='24'
 		role='img'
 		viewBox='0 0 24 24'
