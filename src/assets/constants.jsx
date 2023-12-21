@@ -161,7 +161,7 @@ export const NotificationsLogo = (props) => (
 export const UnlikeLogo = (props) => (
 	<svg
 		aria-label='Unlike'
-		color={props.colorMode == 'light' ? "gray.800" : "whiteAlpha.900"}
+		color={ props.colorMode == 'light' ? "#1A202C" : "rgba(245,245,245,0.92)"}
 		fill='rgb(255, 48, 64)'
 		height='24'
 		role='img'
