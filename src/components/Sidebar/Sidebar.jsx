@@ -119,15 +119,6 @@ const Sidebar = () => {
                         </Box>
                     </Link>
                 </Tooltip>
-                <Box color={colorMode == 'dark' ? "whiteAlpha.500" : "gray.400"} display={{ base: 'none', md: 'block' }}>
-                    &copy; Design by Darlon Vitor
-                </Box>
-                <Box
-                    color={colorMode == 'dark' ? "whiteAlpha.500" : "gray.400"}
-                    display={{ base: 'block', md: 'none' }}
-                >
-                    &copy; D.V.
-                </Box>
             </Flex>
         </Box>
     )

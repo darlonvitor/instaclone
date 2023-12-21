@@ -1,7 +1,9 @@
 import { Box, Container, Flex } from "@chakra-ui/react"
 import FeedPosts from "../../components/FeedPosts/FeedPosts"
+import SugestedUsers from "../../components/SugestedUsers/SugestedUsers"
 
 const HomePage = () => {
+  
   return (
     <Container maxW={"container.lg"}>
       <Flex gap={20}>
@@ -12,7 +14,7 @@ const HomePage = () => {
           display={{ base: 'none', lg: 'block' }}
           maxW={'300px'}
         >
-          SugestedUsers
+          <SugestedUsers user = {{username:"asaprogrammer_", avatar:"/profilepic.png"}} />
         </Box>
       </Flex>
     </Container>
