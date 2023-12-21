@@ -53,7 +53,7 @@ const PostFooter = ({username, legend, comments}) => {
                 w={"full"}
             >
                 <InputGroup>
-                    <Input variant={'flushed'} placeholder="Adicionar um comentário..." />
+                    <Input variant={'flushed'} placeholder="Add um comentário..." />
                     <InputRightElement>
                         <Button
                             fontSize={14}
