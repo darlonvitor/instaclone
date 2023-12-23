@@ -1,25 +1,25 @@
-.element-with-scroll::-webkit-scrollbar{
+.element-with-scroll::-webkit-scrollbar {
     width: 9px;
 }
 
-.element-with-scroll::-webkit-scrollbar-track{
+.element-with-scroll::-webkit-scrollbar-track {
     background: #1e1e24;
 }
 
-.element-with-scroll::-webkit-scrollbar-thumb{
+.element-with-scroll::-webkit-scrollbar-thumb {
     background: #3f3f40;
 }
 
-.element-with-scroll::-webkit-scrollbar-thumb:hover{
+.element-with-scroll::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
 
 /* Styling the scrollbar in Firefox  */
-.element-with-scroll {   
+.element-with-scroll {
     scrollbar-color: #3f3f40 #1e1e24;
     scrollbar-width: thin;
-  }
+}
 
-  .element-with-scroll:hover{
+.element-with-scroll:hover {
     scrollbar-color: #555 #1e1e24;
-  }
+}
