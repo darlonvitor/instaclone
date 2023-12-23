@@ -27,14 +27,14 @@ const Sidebar = () => {
         {
             icon: <Avatar size={"sm"} name={'Nome user'} src='/profilepic.png' border={`1px solid ${colorMode == 'dark' ? "white" : "black"}`} />,
             text: "Perfil",
-            link: "/asaprogrammer"
+            link: "/profile"
         },
     ];
     return (
         <Box
             height={"100vh"}
             borderRight={"1px solid"}
-            borderColor={colorMode == 'dark' ? "whiteAlpha.300" : "gray.300"}
+            borderColor={colorMode == 'dark' ? "whiteAlpha.400" : "gray.300"}
             py={8}
             px={{ base: 2, md: 4 }}
             position={'sticky'}

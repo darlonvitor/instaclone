@@ -19,7 +19,7 @@ const SugestedUsers = ({ user }) => {
 
             <SugestedUser name="Bucky" avatar="https://th.bing.com/th/id/OIG.OfVReUYrjJo9YMLW9Up6?pid=ImgGn" orders={101}/>
             <SugestedUser name="Sophie" avatar="https://th.bing.com/th/id/OIG.ZJVF8kovbjPDgSzuCsnt?pid=ImgGn" orders={30}/>
-            <SugestedUser name="Severus" avatar="/img2.png" orders={47}/>
+            <SugestedUser name="BrandonH_2" avatar="/img2.png" orders={47}/>
 
             <Box
                 fontSize={12} color={'gray.500'} mt={5} alignSelf={'start'}

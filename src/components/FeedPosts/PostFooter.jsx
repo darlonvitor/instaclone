@@ -1,14 +1,12 @@
 import { Box, Button, Flex, Input, InputGroup, InputRightElement, Text, useColorMode } from "@chakra-ui/react"
 import { useState } from "react"
 import { CommentLogo, NotificationsLogo, UnlikeLogo } from "../../assets/constants";
-import { color } from "framer-motion";
 
-
-const PostFooter = ({username, legend, comments}) => {
+const PostFooter = ({ username, legend, comments, isProfilePage }) => {
     const { colorMode } = useColorMode();
     const [liked, setLiked] = useState(false);
     const [likes, setLikes] = useState(1000);
-    
+
     const handleLike = () => {
         if (liked) {
             setLiked(false);
@@ -19,7 +17,7 @@ const PostFooter = ({username, legend, comments}) => {
         }
     }
     return (
-        <Box  mb={10}>
+        <Box mb={10} mt={'auto'}>
             <Flex alignItems={"center"} gap={4} w={'full'} pt={0} mb={2} mt={4}>
                 <Box onClick={handleLike} cursor={"pointer"} fontSize={18}>
                     {!liked ? (<NotificationsLogo colorMode={colorMode} />) : (<UnlikeLogo colorMode={colorMode} />)}
@@ -32,19 +30,24 @@ const PostFooter = ({username, legend, comments}) => {
             <Text fontWeight={600} fontSize={'sm'}>
                 {`${likes} ${likes == 1 ? "like" : "likes"}`}
             </Text>
-            <Text fontSize={'sm'} fontWeight={700}>
-                {username}{" "}
-                <Text as={'span'} fontWeight={400}>
-                    {legend}
-                </Text>
-            </Text>
-            <Text
-                fontSize={'sm'}
-                color={'gray'}
-                cursor={"pointer"}
-            >
-                {comments > 10 ? `Ver todos os ${comments} comentários` : `Ver os comentários`}
-            </Text>
+
+            {!isProfilePage && (
+                <>
+                    <Text fontSize={'sm'} fontWeight={700}>
+                        {username}{" "}
+                        <Text as={'span'} fontWeight={400}>
+                            {legend}
+                        </Text>
+                    </Text>
+                    <Text
+                        fontSize={'sm'}
+                        color={'gray'}
+                        cursor={"pointer"}
+                    >
+                        {comments > 10 ? `Ver todos os ${comments} comentários` : `Ver os comentários`}
+                    </Text>
+                </>
+            )}
 
             <Flex
                 alignItems={"center"}
